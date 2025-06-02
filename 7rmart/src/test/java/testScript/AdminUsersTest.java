@@ -11,7 +11,7 @@ import utilities.ExcelUtilities;
 import utilities.FakerUtility;
 
 public class AdminUsersTest extends Base{
-	@Test
+	@Test(retryAnalyzer=retry.Retry.class) //testcase fail avumbol re execute avan
 	public void adminUsersTest() throws IOException
 	{
 		   //String username="admin"; //credentials

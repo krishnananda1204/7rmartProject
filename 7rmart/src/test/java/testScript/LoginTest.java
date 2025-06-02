@@ -9,7 +9,7 @@ import pages.LoginPage;
 import utilities.ExcelUtilities;
 
 public class LoginTest extends Base{
-	@Test
+	@Test(groups={"regression"},description="LoginTest")   //for grouping
 	public void verifyTheUserIsAbleToLoginUsingValidCreadentials() throws IOException
 	{
 	  // String username="admin"; //credentials

@@ -20,8 +20,9 @@
      </class>
      -->
      
-     <class name="testScript.ManageNewsTest"/>
+    <class name="testScript.ManageNewsTest"/>
      <class name="testScript.AdminUsersTest"/>
+     
      
     </classes>
   </test> <!-- Test -->

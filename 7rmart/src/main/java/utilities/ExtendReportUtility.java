@@ -17,3 +17,6 @@ public class ExtendReportUtility {
 	}
 
 }
+//detailed html reeport generation 
+//add aven stack dependency
+//createExtentReports() method create and generate report

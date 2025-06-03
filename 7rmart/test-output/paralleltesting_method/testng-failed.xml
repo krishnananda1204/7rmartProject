@@ -9,8 +9,7 @@
     <classes>
       <class name="testScript.LoginTest">
         <methods>
-          <include name="verifyTheUserIsUnableToLoginWithInCorrectUsernameAndInCorrectPassword"/>
-          <include name="verifyTheUserIsUnableToLoginWithInCorrectUsernameAndCorrectPassword"/>
+          <include name="verifyTheUserIsUnableToLoginWithInvalidUsernameAndValidPassword"/>
           <include name="driverQuitAndClose"/>
           <include name="initializeBrowser"/>
         </methods>

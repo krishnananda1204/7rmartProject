@@ -19,7 +19,7 @@ public class ManageCategoryPage {
 			PageFactory.initElements(driver, this );
 		}
 	  
-	  @FindBy(xpath="//a[@href='https://groceryapp.uniqassosiates.com/admin/list-category' and @class='small-box-footer']") WebElement manageCategoryMoreInfo;
+	  //@FindBy(xpath="//a[@href='https://groceryapp.uniqassosiates.com/admin/list-category' and @class='small-box-footer']") WebElement manageCategoryMoreInfo;
 	  @FindBy(xpath="//a[@onclick='click_button(1)']") WebElement newButton;
 	  @FindBy(xpath="//input[@name='category']") WebElement categoryField;
 	  @FindBy(xpath="//li[@id='134-selectable']") WebElement selectGroupsField;
@@ -30,35 +30,40 @@ public class ManageCategoryPage {
 	  @FindBy(xpath="//input[@name='show_home' and @value='no']") WebElement left_menu_radio_no;
 	  @FindBy(xpath="//button[@name='create']") WebElement saveButton;
 	  @FindBy(xpath="//div[@class='alert alert-success alert-dismissible']") WebElement alert;
-	  @FindBy(xpath="//a[@href='https://groceryapp.uniqassosiates.com/admin/category/delete?del=2314&page_ad=1']") WebElement deleteButton;
+	  @FindBy(xpath="//a[@href='https://groceryapp.uniqassosiates.com/admin/category/delete?del=2461&page_ad=1']") WebElement deleteButton;
 	 
 
-	  public void clickManageContactMoreInfo()
+	 /* public void clickManageCategoryMoreInfo()
 		{
 		  manageCategoryMoreInfo.click();
-		}
-	  public void clickNewButton()
+		} */
+	  
+	  public ManageCategoryPage clickNewButton()
 		{
 		  newButton.click();
+		return this;
 		}
-	  public void enterCategoryField(String category)
+	  public ManageCategoryPage enterCategoryField(String category)
 		{
 		  categoryField.sendKeys(category);
+		return this;
 		}
-	  public void selectGroups()
+	  public ManageCategoryPage selectGroups()
 		{
 		  selectGroupsField.click();
+		return this;
 		}
-	  public void clickChooseFile() throws AWTException 
+	  public ManageCategoryPage clickChooseFile() throws AWTException 
 		{
 		  //imageUpload.click();
 		  //imageUpload.sendKeys(imagepath);
 		  
 		  FileUploadUtility fileuploadutility=new FileUploadUtility();
 		  //fileuploadutility.fileuploadUsingRobertClass(imageUpload, Constants.BAGIMAGE);
-		  fileuploadutility.fileUploadUsingSendKeys(imageUpload, Constants.WATCHIMAGE); 
+		  fileuploadutility.fileUploadUsingSendKeys(imageUpload, Constants.PERFUMEIMAGE);
+		return this; 
 		}
-	  public void selectTopMenuRadioButton(String value) {
+	  public ManageCategoryPage selectTopMenuRadioButton(String value) {
 		  
 		    if ("yes".equalsIgnoreCase(value)) {
 		        
@@ -67,9 +72,10 @@ public class ManageCategoryPage {
 		       
 		    	pageutility.click(top_menu_radio_no, driver);
 		    }
+			return this;
 		}
 
-		public void selectLeftMenuRadioButton(String value) {
+		public ManageCategoryPage selectLeftMenuRadioButton(String value) {
 		   
 		    if ("yes".equalsIgnoreCase(value)) {
 		       
@@ -78,15 +84,17 @@ public class ManageCategoryPage {
 		        
 		    	pageutility.click(left_menu_radio_no, driver);
 		    }
+			return this;
 		}
 
-	  public void clickSaveButton()
+	  public ManageCategoryPage clickSaveButton()
 		{
 		  //JavascriptExecutor js = (JavascriptExecutor) driver;
 		  //js.executeScript("arguments[0].click();", saveButton);
 		  //saveButton.click();
 		 // pageutility.clickByJs(driver, saveButton);
 		  pageutility.click(saveButton, driver);
+		return this;
 		}
 	  public boolean isAlertDisplayed()  
 		{

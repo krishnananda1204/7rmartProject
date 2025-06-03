@@ -2,12 +2,12 @@
 <testng-results ignored="0" total="2" passed="2" failed="0" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2025-06-03T09:34:29 IST" name="Suite" finished-at="2025-06-03T09:34:41 IST" duration-ms="11907">
+  <suite started-at="2025-06-04T00:34:29 IST" name="Suite" finished-at="2025-06-04T00:34:39 IST" duration-ms="10209">
     <groups>
     </groups>
-    <test started-at="2025-06-03T09:34:29 IST" name="Test" finished-at="2025-06-03T09:34:41 IST" duration-ms="11907">
+    <test started-at="2025-06-04T00:34:29 IST" name="Test" finished-at="2025-06-04T00:34:39 IST" duration-ms="10209">
       <class name="testScript.ManageNewsTest">
-        <test-method is-config="true" signature="initializeBrowser(java.lang.String)[pri:0, instance:testScript.ManageNewsTest@47caedad]" started-at="2025-06-03T09:34:29 IST" name="initializeBrowser" finished-at="2025-06-03T09:34:33 IST" duration-ms="3494" status="PASS">
+        <test-method is-config="true" signature="initializeBrowser(java.lang.String)[pri:0, instance:testScript.ManageNewsTest@6f15d60e]" started-at="2025-06-04T00:34:29 IST" name="initializeBrowser" finished-at="2025-06-04T00:34:32 IST" duration-ms="3037" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -18,15 +18,15 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- initializeBrowser -->
-        <test-method signature="manageNewsTest()[pri:0, instance:testScript.ManageNewsTest@47caedad]" started-at="2025-06-03T09:34:33 IST" name="manageNewsTest" finished-at="2025-06-03T09:34:36 IST" duration-ms="3181" status="PASS">
+        <test-method signature="verifyUserCanAddNewNewsSuccessfullyInManageNewsPage()[pri:0, instance:testScript.ManageNewsTest@6f15d60e]" started-at="2025-06-04T00:34:32 IST" name="verifyUserCanAddNewNewsSuccessfullyInManageNewsPage" description="Verifying whether user can Add new News in Manage News section" finished-at="2025-06-04T00:34:34 IST" duration-ms="2501" status="PASS">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- manageNewsTest -->
-        <test-method is-config="true" signature="driverQuitAndClose(org.testng.ITestResult)[pri:0, instance:testScript.ManageNewsTest@47caedad]" started-at="2025-06-03T09:34:36 IST" name="driverQuitAndClose" finished-at="2025-06-03T09:34:36 IST" duration-ms="3" status="PASS">
+        </test-method> <!-- verifyUserCanAddNewNewsSuccessfullyInManageNewsPage -->
+        <test-method is-config="true" signature="driverQuitAndClose(org.testng.ITestResult)[pri:0, instance:testScript.ManageNewsTest@6f15d60e]" started-at="2025-06-04T00:34:34 IST" name="driverQuitAndClose" finished-at="2025-06-04T00:34:34 IST" duration-ms="2" status="PASS">
           <params>
             <param index="0">
               <value>
-                <![CDATA[[TestResult name=manageNewsTest status=SUCCESS method=ManageNewsTest.manageNewsTest()[pri:0, instance:testScript.ManageNewsTest@47caedad] output={null}]]]>
+                <![CDATA[[TestResult name=verifyUserCanAddNewNewsSuccessfullyInManageNewsPage status=SUCCESS method=ManageNewsTest.verifyUserCanAddNewNewsSuccessfullyInManageNewsPage()[pri:0, instance:testScript.ManageNewsTest@6f15d60e] output={null}]]]>
               </value>
             </param>
           </params>
@@ -35,7 +35,7 @@
         </test-method> <!-- driverQuitAndClose -->
       </class> <!-- testScript.ManageNewsTest -->
       <class name="testScript.AdminUsersTest">
-        <test-method is-config="true" signature="initializeBrowser(java.lang.String)[pri:0, instance:testScript.AdminUsersTest@3e0e1046]" started-at="2025-06-03T09:34:36 IST" name="initializeBrowser" finished-at="2025-06-03T09:34:39 IST" duration-ms="2560" status="PASS">
+        <test-method is-config="true" signature="initializeBrowser(java.lang.String)[pri:0, instance:testScript.AdminUsersTest@f68f0dc]" started-at="2025-06-04T00:34:34 IST" name="initializeBrowser" finished-at="2025-06-04T00:34:36 IST" duration-ms="1969" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -46,15 +46,15 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- initializeBrowser -->
-        <test-method signature="adminUsersTest()[pri:0, instance:testScript.AdminUsersTest@3e0e1046]" started-at="2025-06-03T09:34:39 IST" name="adminUsersTest" finished-at="2025-06-03T09:34:41 IST" duration-ms="2590" status="PASS">
+        <test-method signature="verifyAddNewUsersSuccessfullyInNewAdminusersPage()[pri:0, instance:testScript.AdminUsersTest@f68f0dc]" started-at="2025-06-04T00:34:36 IST" name="verifyAddNewUsersSuccessfullyInNewAdminusersPage" description="Verifying Admin user can add new user Successfully on the Admin Users Page" finished-at="2025-06-04T00:34:39 IST" duration-ms="2646" status="PASS">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- adminUsersTest -->
-        <test-method is-config="true" signature="driverQuitAndClose(org.testng.ITestResult)[pri:0, instance:testScript.AdminUsersTest@3e0e1046]" started-at="2025-06-03T09:34:41 IST" name="driverQuitAndClose" finished-at="2025-06-03T09:34:41 IST" duration-ms="0" status="PASS">
+        </test-method> <!-- verifyAddNewUsersSuccessfullyInNewAdminusersPage -->
+        <test-method is-config="true" signature="driverQuitAndClose(org.testng.ITestResult)[pri:0, instance:testScript.AdminUsersTest@f68f0dc]" started-at="2025-06-04T00:34:39 IST" name="driverQuitAndClose" finished-at="2025-06-04T00:34:39 IST" duration-ms="0" status="PASS">
           <params>
             <param index="0">
               <value>
-                <![CDATA[[TestResult name=adminUsersTest status=SUCCESS method=AdminUsersTest.adminUsersTest()[pri:0, instance:testScript.AdminUsersTest@3e0e1046] output={null}]]]>
+                <![CDATA[[TestResult name=verifyAddNewUsersSuccessfullyInNewAdminusersPage status=SUCCESS method=AdminUsersTest.verifyAddNewUsersSuccessfullyInNewAdminusersPage()[pri:0, instance:testScript.AdminUsersTest@f68f0dc] output={null}]]]>
               </value>
             </param>
           </params>

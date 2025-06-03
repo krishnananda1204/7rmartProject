@@ -9,8 +9,8 @@
     <classes>
       <class name="testScript.LoginTest">
       <methods>
-      <include name="verifyTheUserIsUnableToLoginWithInCorrectUsernameAndInCorrectPassword"></include>
-      <include name="verifyTheUserIsUnableToLoginWithInCorrectUsernameAndCorrectPassword"></include>
+      <include name="verifyTheUserIsUnableToLoginWithInvalidUsernameAndInvalidPassword"></include>
+      <include name="verifyTheUserIsUnableToLoginWithInvalidUsernameAndValidPassword"></include>
       </methods>
      </class>
     </classes>

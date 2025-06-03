@@ -18,7 +18,7 @@ public class ManageContactPage {
 	}
 	
 	
-	@FindBy(xpath="//a[@href='https://groceryapp.uniqassosiates.com/admin/list-contact' and @class='small-box-footer']") WebElement manageContactMoreInfo;
+	//@FindBy(xpath="//a[@href='https://groceryapp.uniqassosiates.com/admin/list-contact' and @class='small-box-footer']") WebElement manageContactMoreInfo;
 	@FindBy(xpath="//a[@role='button' and @class='btn btn-sm btn btn-primary btncss']") WebElement editButton;
 	@FindBy(xpath="//input[@id='phone']") WebElement phoneField;
 	@FindBy(xpath="//input[@id='email']") WebElement emailField;
@@ -29,43 +29,51 @@ public class ManageContactPage {
 	@FindBy(xpath="//div[@class='alert alert-success alert-dismissible']") WebElement alert;
 	
 
-	public void clickManageContactMoreInfo()
+ /* public void clickManageContactMoreInfo()
 	{
 		manageContactMoreInfo.click();
-	}
-	public void clickEditButton()
+	}   */
+	
+	public ManageContactPage clickEditButton()
 	{
 		editButton.click();
+		return this;
 	}
-	public void clearAllField()
+	public ManageContactPage clearAllField()
 	{
 		phoneField.clear();
 		emailField.clear();
 		addressField.clear();
 		delivery_time_Field.clear();
 		delivery_chrg_limit_Field.clear();
+		return this;
 	}
-	public void enterPhone(String phone)
+	public ManageContactPage enterPhone(String phone)
 	{
 		
 		phoneField.sendKeys(phone);
+		return this;
 	}
-	public void enterEmail(String email)
+	public ManageContactPage enterEmail(String email)
 	{
 		
 		emailField.sendKeys(email);
+		return this;
 	}
-	public void EnterAddress(String address)
+	public ManageContactPage EnterAddress(String address)
 	{
 		addressField.sendKeys(address);
+		return this;
 	}
-	public void enterDeliveryTime(String deliverytime)
+	public ManageContactPage enterDeliveryTime(String deliverytime)
 	{
 		delivery_time_Field.sendKeys(deliverytime);
+		return this;
 	}
-	public void enterDeliveryChargeLimit(String deliverychargelimit)
+	public ManageContactPage enterDeliveryChargeLimit(String deliverychargelimit)
 	{
 		delivery_chrg_limit_Field.sendKeys(deliverychargelimit);
+		return this;
 	}
 	/* public void clickUpdateButton()
 	{
@@ -75,9 +83,10 @@ public class ManageContactPage {
 	
 	} */
 	
-	public void clickUpdateButton() {
+	public ManageContactPage clickUpdateButton() {
 		
         pageutility.click(updateButton, driver);
+		return this;
     }
 	public boolean isAlertDisplayed()  
 	{

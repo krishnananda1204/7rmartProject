@@ -25,3 +25,4 @@ String destination = System.getProperty("user.dir") + "//outputScreenShot//" + f
  		FileHandler.copy(screenShot, finalDestination);  
  	}
 }
+//capture the failed testcases screenshot

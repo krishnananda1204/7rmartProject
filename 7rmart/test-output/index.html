@@ -103,12 +103,12 @@
                     <div class="method-list-content passed suite-Suite">
                       <span>
                         <img src="passed.png" width="3%"/>
-                        <a href="#" panel-name="suite-Suite" title="testScript.AdminUsersTest" class="method navigator-link" hash-for-method="adminUsersTest">adminUsersTest</a> <!-- method navigator-link -->
+                        <a href="#" panel-name="suite-Suite" title="testScript.AdminUsersTest" class="method navigator-link" hash-for-method="verifyAddNewUsersSuccessfullyInNewAdminusersPage">verifyAddNewUsersSuccessfullyInNewAdminusersPage</a> <!-- method navigator-link -->
                       </span>
                       <br/>
                       <span>
                         <img src="passed.png" width="3%"/>
-                        <a href="#" panel-name="suite-Suite" title="testScript.ManageNewsTest" class="method navigator-link" hash-for-method="manageNewsTest">manageNewsTest</a> <!-- method navigator-link -->
+                        <a href="#" panel-name="suite-Suite" title="testScript.ManageNewsTest" class="method navigator-link" hash-for-method="verifyUserCanAddNewNewsSuccessfullyInManageNewsPage">verifyUserCanAddNewNewsSuccessfullyInManageNewsPage</a> <!-- method navigator-link -->
                       </span>
                       <br/>
                     </div> <!-- method-list-content passed suite-Suite -->
@@ -131,9 +131,11 @@
             <div class="main-panel-content rounded-window-bottom">
               <div class="method">
                 <div class="method-content">
-                  <a name="manageNewsTest">
-                  </a> <!-- manageNewsTest -->
-                  <span class="method-name">manageNewsTest</span>
+                  <a name="verifyUserCanAddNewNewsSuccessfullyInManageNewsPage">
+                  </a> <!-- verifyUserCanAddNewNewsSuccessfullyInManageNewsPage -->
+                  <span class="method-name">verifyUserCanAddNewNewsSuccessfullyInManageNewsPage</span>
+                  <em>
+(Verifying whether user can Add new News in Manage News section)                  </em>
                 </div> <!-- method-content -->
               </div> <!-- method -->
             </div> <!-- main-panel-content rounded-window-bottom -->
@@ -146,9 +148,11 @@
             <div class="main-panel-content rounded-window-bottom">
               <div class="method">
                 <div class="method-content">
-                  <a name="adminUsersTest">
-                  </a> <!-- adminUsersTest -->
-                  <span class="method-name">adminUsersTest</span>
+                  <a name="verifyAddNewUsersSuccessfullyInNewAdminusersPage">
+                  </a> <!-- verifyAddNewUsersSuccessfullyInNewAdminusersPage -->
+                  <span class="method-name">verifyAddNewUsersSuccessfullyInNewAdminusersPage</span>
+                  <em>
+(Verifying Admin user can add new user Successfully on the Admin Users Page)                  </em>
                 </div> <!-- method-content -->
               </div> <!-- method -->
             </div> <!-- main-panel-content rounded-window-bottom -->
@@ -212,13 +216,13 @@ data.addColumn('string', 'Class');
 data.addColumn('number', 'Time (ms)');
 data.addRows(2);
 data.setCell(0, 0, 0)
-data.setCell(0, 1, 'manageNewsTest')
-data.setCell(0, 2, 'testScript.ManageNewsTest')
-data.setCell(0, 3, 3181);
+data.setCell(0, 1, 'verifyAddNewUsersSuccessfullyInNewAdminusersPage')
+data.setCell(0, 2, 'testScript.AdminUsersTest')
+data.setCell(0, 3, 2646);
 data.setCell(1, 0, 1)
-data.setCell(1, 1, 'adminUsersTest')
-data.setCell(1, 2, 'testScript.AdminUsersTest')
-data.setCell(1, 3, 2590);
+data.setCell(1, 1, 'verifyUserCanAddNewNewsSuccessfullyInManageNewsPage')
+data.setCell(1, 2, 'testScript.ManageNewsTest')
+data.setCell(1, 3, 2501);
 window.suiteTableData['Suite']= { tableData: data, tableDiv: 'times-div-Suite'}
 return data;
 }
@@ -255,27 +259,27 @@ return data;
                 <span class="method-start">0 ms</span>
               </div> <!-- configuration-method before -->
               <div class="test-method">
-                <span class="method-name">manageNewsTest</span>
-                <span class="method-start">3496 ms</span>
+                <span class="method-name">verifyUserCanAddNewNewsSuccessfullyInManageNewsPage</span>
+                <span class="method-start">3039 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-method after">
-                <span class="method-name">driverQuitAndClose([TestResult name=manageNewsTest status=SUCCESS method=ManageNewsTest.manageNewsTest()[pri:0, instanc...)</span>
-                <span class="method-start">6690 ms</span>
+                <span class="method-name">driverQuitAndClose([TestResult name=verifyUserCanAddNewNewsSuccessfullyInManageNewsPage status=SUCCESS method=ManageNew...)</span>
+                <span class="method-start">5546 ms</span>
               </div> <!-- configuration-method after -->
             </div> <!-- chronological-class -->
             <div class="chronological-class">
               <div class="chronological-class-name">testScript.AdminUsersTest</div> <!-- chronological-class-name -->
               <div class="configuration-method before">
                 <span class="method-name">initializeBrowser(chrome)</span>
-                <span class="method-start">6699 ms</span>
+                <span class="method-start">5553 ms</span>
               </div> <!-- configuration-method before -->
               <div class="test-method">
-                <span class="method-name">adminUsersTest</span>
-                <span class="method-start">9259 ms</span>
+                <span class="method-name">verifyAddNewUsersSuccessfullyInNewAdminusersPage</span>
+                <span class="method-start">7522 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-method after">
-                <span class="method-name">driverQuitAndClose([TestResult name=adminUsersTest status=SUCCESS method=AdminUsersTest.adminUsersTest()[pri:0, instanc...)</span>
-                <span class="method-start">11853 ms</span>
+                <span class="method-name">driverQuitAndClose([TestResult name=verifyAddNewUsersSuccessfullyInNewAdminusersPage status=SUCCESS method=AdminUsersTe...)</span>
+                <span class="method-start">10170 ms</span>
               </div> <!-- configuration-method after -->
           </div> <!-- main-panel-content rounded-window-bottom -->
         </div> <!-- panel -->

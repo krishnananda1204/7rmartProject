@@ -57,9 +57,9 @@ function toggleAllBoxes() {
 <tr>
 <td>Tests passed/Failed/Skipped:</td><td>0/1/0</td>
 </tr><tr>
-<td>Started on:</td><td>Tue Jun 03 00:29:21 IST 2025</td>
+<td>Started on:</td><td>Wed Jun 04 00:27:38 IST 2025</td>
 </tr>
-<tr><td>Total time:</td><td>5 seconds (5678 ms)</td>
+<tr><td>Total time:</td><td>3 seconds (3772 ms)</td>
 </tr><tr>
 <td>Included groups:</td><td></td>
 </tr><tr>
@@ -76,63 +76,37 @@ function toggleAllBoxes() {
 <td><b>Instance</b></td>
 </tr>
 <tr>
-<td title='testScript.ManageNewsTest.manageNewsTest()'><b>manageNewsTest</b><br>Test class: testScript.ManageNewsTest</td>
-<td><div><pre>java.io.IOException: Stream Closed
-	at java.base/java.io.FileInputStream.available0(Native Method)
-	at java.base/java.io.FileInputStream.available(FileInputStream.java:473)
-	at java.base/java.io.BufferedInputStream.implRead(BufferedInputStream.java:428)
-	at java.base/java.io.BufferedInputStream.read(BufferedInputStream.java:399)
-	at java.base/java.io.FilterInputStream.read(FilterInputStream.java:119)
-	at java.base/java.io.PushbackInputStream.read(PushbackInputStream.java:197)
-	at java.base/java.io.FilterInputStream.read(FilterInputStream.java:95)
-	at org.apache.commons.compress.archivers.zip.ZipArchiveInputStream.fill(ZipArchiveInputStream.java:861)
-	at org.apache.commons.compress.archivers.zip.ZipArchiveInputStream.readFromInflater(ZipArchiveInputStream.java:650)
-	at org.apache.commons.compress.archivers.zip.ZipArchiveInputStream.readDeflated(ZipArchiveInputStream.java:625)
-	at org.apache.commons.compress.archivers.zip.ZipArchiveInputStream.read(ZipArchiveInputStream.java:528)
-	at java.base/java.io.FilterInputStream.read(FilterInputStream.java:119)
-	at org.apache.poi.openxml4j.util.ZipArchiveThresholdInputStream.read(ZipArchiveThresholdInputStream.java:80)
-	at org.apache.poi.util.IOUtils.toByteArray(IOUtils.java:240)
-	at org.apache.poi.util.IOUtils.toByteArray(IOUtils.java:203)
-	at org.apache.poi.openxml4j.util.ZipArchiveFakeEntry.&lt;init&gt;(ZipArchiveFakeEntry.java:82)
-	at org.apache.poi.openxml4j.util.ZipInputStreamZipEntrySource.&lt;init&gt;(ZipInputStreamZipEntrySource.java:98)
+<td title='testScript.ManageNewsTest.verifyUserCanAddNewNewsSuccessfullyInManageNewsPage()'><b>verifyUserCanAddNewNewsSuccessfullyInManageNewsPage</b><br>Test class: testScript.ManageNewsTest<br>Test method: Verifying whether user can Add new News in Manage News section</td>
+<td><div><pre>org.apache.poi.openxml4j.exceptions.NotOfficeXmlFileException: No valid entries or contents found, this is not a valid OOXML (Office Open XML) file
+	at org.apache.poi.openxml4j.util.ZipArchiveThresholdInputStream.getNextEntry(ZipArchiveThresholdInputStream.java:156)
+	at org.apache.poi.openxml4j.util.ZipInputStreamZipEntrySource.&lt;init&gt;(ZipInputStreamZipEntrySource.java:94)
 	at org.apache.poi.openxml4j.opc.ZipPackage.&lt;init&gt;(ZipPackage.java:132)
 	at org.apache.poi.openxml4j.opc.OPCPackage.open(OPCPackage.java:319)
 	at org.apache.poi.ooxml.util.PackageHelper.open(PackageHelper.java:59)
 	at org.apache.poi.xssf.usermodel.XSSFWorkbook.&lt;init&gt;(XSSFWorkbook.java:290)
 	at org.apache.poi.xssf.usermodel.XSSFWorkbook.&lt;init&gt;(XSSFWorkbook.java:286)
-	at utilities.ExcelUtilities.getStringData(ExcelUtilities.java:22)
-	at testScript.ManageNewsTest.manageNewsTest(ManageNewsTest.java:18)
+	at utilities.ExcelUtilities.getStringData(ExcelUtilities.java:25)
+	at testScript.ManageNewsTest.verifyUserCanAddNewNewsSuccessfullyInManageNewsPage(ManageNewsTest.java:22)
 	at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
 	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:317)
 	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1144)
 	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:642)
 	at java.base/java.lang.Thread.run(Thread.java:1583)
-... Removed 15 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace1574432365", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
-<div class='stack-trace' id='stack-trace1574432365'><pre>java.io.IOException: Stream Closed
-	at java.base/java.io.FileInputStream.available0(Native Method)
-	at java.base/java.io.FileInputStream.available(FileInputStream.java:473)
-	at java.base/java.io.BufferedInputStream.implRead(BufferedInputStream.java:428)
-	at java.base/java.io.BufferedInputStream.read(BufferedInputStream.java:399)
-	at java.base/java.io.FilterInputStream.read(FilterInputStream.java:119)
-	at java.base/java.io.PushbackInputStream.read(PushbackInputStream.java:197)
-	at java.base/java.io.FilterInputStream.read(FilterInputStream.java:95)
-	at org.apache.commons.compress.archivers.zip.ZipArchiveInputStream.fill(ZipArchiveInputStream.java:861)
-	at org.apache.commons.compress.archivers.zip.ZipArchiveInputStream.readFromInflater(ZipArchiveInputStream.java:650)
-	at org.apache.commons.compress.archivers.zip.ZipArchiveInputStream.readDeflated(ZipArchiveInputStream.java:625)
-	at org.apache.commons.compress.archivers.zip.ZipArchiveInputStream.read(ZipArchiveInputStream.java:528)
-	at java.base/java.io.FilterInputStream.read(FilterInputStream.java:119)
-	at org.apache.poi.openxml4j.util.ZipArchiveThresholdInputStream.read(ZipArchiveThresholdInputStream.java:80)
-	at org.apache.poi.util.IOUtils.toByteArray(IOUtils.java:240)
-	at org.apache.poi.util.IOUtils.toByteArray(IOUtils.java:203)
-	at org.apache.poi.openxml4j.util.ZipArchiveFakeEntry.&lt;init&gt;(ZipArchiveFakeEntry.java:82)
-	at org.apache.poi.openxml4j.util.ZipInputStreamZipEntrySource.&lt;init&gt;(ZipInputStreamZipEntrySource.java:98)
+Caused by: java.util.zip.ZipException: Unexpected record signature: 0X8C94484F
+	at org.apache.commons.compress.archivers.zip.ZipArchiveInputStream.getNextZipEntry(ZipArchiveInputStream.java:296)
+	at org.apache.poi.openxml4j.util.ZipArchiveThresholdInputStream.getNextEntry(ZipArchiveThresholdInputStream.java:152)
+	... 28 more
+... Removed 15 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace1506873193", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace1506873193'><pre>org.apache.poi.openxml4j.exceptions.NotOfficeXmlFileException: No valid entries or contents found, this is not a valid OOXML (Office Open XML) file
+	at org.apache.poi.openxml4j.util.ZipArchiveThresholdInputStream.getNextEntry(ZipArchiveThresholdInputStream.java:156)
+	at org.apache.poi.openxml4j.util.ZipInputStreamZipEntrySource.&lt;init&gt;(ZipInputStreamZipEntrySource.java:94)
 	at org.apache.poi.openxml4j.opc.ZipPackage.&lt;init&gt;(ZipPackage.java:132)
 	at org.apache.poi.openxml4j.opc.OPCPackage.open(OPCPackage.java:319)
 	at org.apache.poi.ooxml.util.PackageHelper.open(PackageHelper.java:59)
 	at org.apache.poi.xssf.usermodel.XSSFWorkbook.&lt;init&gt;(XSSFWorkbook.java:290)
 	at org.apache.poi.xssf.usermodel.XSSFWorkbook.&lt;init&gt;(XSSFWorkbook.java:286)
-	at utilities.ExcelUtilities.getStringData(ExcelUtilities.java:22)
-	at testScript.ManageNewsTest.manageNewsTest(ManageNewsTest.java:18)
+	at utilities.ExcelUtilities.getStringData(ExcelUtilities.java:25)
+	at testScript.ManageNewsTest.verifyUserCanAddNewNewsSuccessfullyInManageNewsPage(ManageNewsTest.java:22)
 	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
 	at java.base/java.lang.reflect.Method.invoke(Method.java:580)
 	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:139)
@@ -153,9 +127,13 @@ function toggleAllBoxes() {
 	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1144)
 	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:642)
 	at java.base/java.lang.Thread.run(Thread.java:1583)
+Caused by: java.util.zip.ZipException: Unexpected record signature: 0X8C94484F
+	at org.apache.commons.compress.archivers.zip.ZipArchiveInputStream.getNextZipEntry(ZipArchiveInputStream.java:296)
+	at org.apache.poi.openxml4j.util.ZipArchiveThresholdInputStream.getNextEntry(ZipArchiveThresholdInputStream.java:152)
+	... 28 more
 </pre></div></td>
 <td>0</td>
-<td>testScript.ManageNewsTest@4f0f2942</td></tr>
+<td>testScript.ManageNewsTest@20b2475a</td></tr>
 </table><p>
 </body>
 </html>

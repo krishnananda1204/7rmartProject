@@ -5,26 +5,26 @@
   <listeners>
     <listener class-name="generateReport.Listeners"/>
   </listeners>
-  <test thread-count="5" parallel="tests" name="Test2(failed)">
-    <classes>
-      <class name="testScript.AdminUsersTest">
-        <methods>
-          <include name="adminUsersTest"/>
-          <include name="driverQuitAndClose"/>
-          <include name="initializeBrowser"/>
-        </methods>
-      </class> <!-- testScript.AdminUsersTest -->
-    </classes>
-  </test> <!-- Test2(failed) -->
   <test thread-count="5" parallel="tests" name="Test1(failed)">
     <classes>
       <class name="testScript.ManageNewsTest">
         <methods>
-          <include name="manageNewsTest"/>
+          <include name="verifyUserCanAddNewNewsSuccessfullyInManageNewsPage"/>
           <include name="driverQuitAndClose"/>
           <include name="initializeBrowser"/>
         </methods>
       </class> <!-- testScript.ManageNewsTest -->
     </classes>
   </test> <!-- Test1(failed) -->
+  <test thread-count="5" parallel="tests" name="Test2(failed)">
+    <classes>
+      <class name="testScript.AdminUsersTest">
+        <methods>
+          <include name="verifyAddNewUsersSuccessfullyInNewAdminusersPage"/>
+          <include name="driverQuitAndClose"/>
+          <include name="initializeBrowser"/>
+        </methods>
+      </class> <!-- testScript.AdminUsersTest -->
+    </classes>
+  </test> <!-- Test2(failed) -->
 </suite> <!-- Failed suite [parallelTesting_Test] -->

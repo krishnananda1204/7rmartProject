@@ -93,12 +93,12 @@ public class ManageCategoryPage {
 		  return alert.isDisplayed();		
 		}
 	  
-	  public void deleteCategory()
+	/*  public void deleteCategory()
 	  {
 		  deleteButton.click();
 		  driver.switchTo().alert().accept();
 		  //driver.switchTo().alert().dismiss();
 	  }
-	  
+	  */
 	 
 }

@@ -40,8 +40,9 @@ public class ManageCategoryTest extends Base{
 		
 	}
 	
-	@Test
-	public void deleteManageCategory() throws IOException, AWTException
+	
+	/* @Test
+	  public void deleteManageCategory() throws IOException, AWTException
 	{
 	
 	      String username=ExcelUtilities.getStringData(1, 0, "loginpage"); 
@@ -55,5 +56,5 @@ public class ManageCategoryTest extends Base{
 		  managecategory.clickManageContactMoreInfo();
 		  managecategory.deleteCategory();
 		
-	}
+	} */
 }

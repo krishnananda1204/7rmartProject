@@ -1,13 +1,13 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results ignored="0" total="2" passed="0" failed="2" skipped="0">
+<testng-results ignored="0" total="2" passed="2" failed="0" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2025-06-03T00:52:00 IST" name="ParallelTesting_Method" finished-at="2025-06-03T00:52:05 IST" duration-ms="4713">
+  <suite started-at="2025-06-03T09:34:29 IST" name="Suite" finished-at="2025-06-03T09:34:41 IST" duration-ms="11907">
     <groups>
     </groups>
-    <test started-at="2025-06-03T00:52:00 IST" name="Test" finished-at="2025-06-03T00:52:05 IST" duration-ms="4713">
-      <class name="testScript.LoginTest">
-        <test-method is-config="true" signature="initializeBrowser(java.lang.String)[pri:0, instance:testScript.LoginTest@1500b2f3]" started-at="2025-06-03T00:52:00 IST" name="initializeBrowser" finished-at="2025-06-03T00:52:04 IST" duration-ms="4089" status="PASS">
+    <test started-at="2025-06-03T09:34:29 IST" name="Test" finished-at="2025-06-03T09:34:41 IST" duration-ms="11907">
+      <class name="testScript.ManageNewsTest">
+        <test-method is-config="true" signature="initializeBrowser(java.lang.String)[pri:0, instance:testScript.ManageNewsTest@47caedad]" started-at="2025-06-03T09:34:29 IST" name="initializeBrowser" finished-at="2025-06-03T09:34:33 IST" duration-ms="3494" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -18,7 +18,24 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- initializeBrowser -->
-        <test-method is-config="true" signature="initializeBrowser(java.lang.String)[pri:0, instance:testScript.LoginTest@1500b2f3]" started-at="2025-06-03T00:52:00 IST" name="initializeBrowser" finished-at="2025-06-03T00:52:04 IST" duration-ms="4090" status="PASS">
+        <test-method signature="manageNewsTest()[pri:0, instance:testScript.ManageNewsTest@47caedad]" started-at="2025-06-03T09:34:33 IST" name="manageNewsTest" finished-at="2025-06-03T09:34:36 IST" duration-ms="3181" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- manageNewsTest -->
+        <test-method is-config="true" signature="driverQuitAndClose(org.testng.ITestResult)[pri:0, instance:testScript.ManageNewsTest@47caedad]" started-at="2025-06-03T09:34:36 IST" name="driverQuitAndClose" finished-at="2025-06-03T09:34:36 IST" duration-ms="3" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=manageNewsTest status=SUCCESS method=ManageNewsTest.manageNewsTest()[pri:0, instance:testScript.ManageNewsTest@47caedad] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- driverQuitAndClose -->
+      </class> <!-- testScript.ManageNewsTest -->
+      <class name="testScript.AdminUsersTest">
+        <test-method is-config="true" signature="initializeBrowser(java.lang.String)[pri:0, instance:testScript.AdminUsersTest@3e0e1046]" started-at="2025-06-03T09:34:36 IST" name="initializeBrowser" finished-at="2025-06-03T09:34:39 IST" duration-ms="2560" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -29,118 +46,22 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- initializeBrowser -->
-        <test-method signature="verifyTheUserIsUnableToLoginWithInCorrectUsernameAndInCorrectPassword()[pri:0, instance:testScript.LoginTest@1500b2f3]" started-at="2025-06-03T00:52:04 IST" name="verifyTheUserIsUnableToLoginWithInCorrectUsernameAndInCorrectPassword" finished-at="2025-06-03T00:52:05 IST" duration-ms="256" status="FAIL">
-          <exception class="java.io.IOException">
-            <message>
-              <![CDATA[Stream Closed]]>
-            </message>
-            <full-stacktrace>
-              <![CDATA[java.io.IOException: Stream Closed
-at java.base/java.io.FileInputStream.available0(Native Method)
-at java.base/java.io.FileInputStream.available(FileInputStream.java:473)
-at java.base/java.io.BufferedInputStream.implRead(BufferedInputStream.java:428)
-at java.base/java.io.BufferedInputStream.read(BufferedInputStream.java:399)
-at java.base/java.io.FilterInputStream.read(FilterInputStream.java:119)
-at java.base/java.io.PushbackInputStream.read(PushbackInputStream.java:197)
-at java.base/java.io.FilterInputStream.read(FilterInputStream.java:95)
-at org.apache.commons.compress.archivers.zip.ZipArchiveInputStream.fill(ZipArchiveInputStream.java:861)
-at org.apache.commons.compress.archivers.zip.ZipArchiveInputStream.readFromInflater(ZipArchiveInputStream.java:650)
-at org.apache.commons.compress.archivers.zip.ZipArchiveInputStream.readDeflated(ZipArchiveInputStream.java:625)
-at org.apache.commons.compress.archivers.zip.ZipArchiveInputStream.read(ZipArchiveInputStream.java:528)
-at java.base/java.io.FilterInputStream.read(FilterInputStream.java:119)
-at org.apache.poi.openxml4j.util.ZipArchiveThresholdInputStream.read(ZipArchiveThresholdInputStream.java:80)
-at org.apache.poi.util.IOUtils.toByteArray(IOUtils.java:240)
-at org.apache.poi.util.IOUtils.toByteArray(IOUtils.java:203)
-at org.apache.poi.openxml4j.util.ZipArchiveFakeEntry.<init>(ZipArchiveFakeEntry.java:82)
-at org.apache.poi.openxml4j.util.ZipInputStreamZipEntrySource.<init>(ZipInputStreamZipEntrySource.java:98)
-at org.apache.poi.openxml4j.opc.ZipPackage.<init>(ZipPackage.java:132)
-at org.apache.poi.openxml4j.opc.OPCPackage.open(OPCPackage.java:319)
-at org.apache.poi.ooxml.util.PackageHelper.open(PackageHelper.java:59)
-at org.apache.poi.xssf.usermodel.XSSFWorkbook.<init>(XSSFWorkbook.java:290)
-at org.apache.poi.xssf.usermodel.XSSFWorkbook.<init>(XSSFWorkbook.java:286)
-at utilities.ExcelUtilities.getStringData(ExcelUtilities.java:22)
-at testScript.LoginTest.verifyTheUserIsUnableToLoginWithInCorrectUsernameAndInCorrectPassword(LoginTest.java:57)
-at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
-at java.base/java.lang.reflect.Method.invoke(Method.java:580)
-at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:139)
-at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:664)
-at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:227)
-at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:50)
-at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:957)
-at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:200)
-at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:148)
-at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
-at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1144)
-at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:642)
-at java.base/java.lang.Thread.run(Thread.java:1583)
-]]>
-            </full-stacktrace>
-          </exception> <!-- java.io.IOException -->
+        <test-method signature="adminUsersTest()[pri:0, instance:testScript.AdminUsersTest@3e0e1046]" started-at="2025-06-03T09:34:39 IST" name="adminUsersTest" finished-at="2025-06-03T09:34:41 IST" duration-ms="2590" status="PASS">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- verifyTheUserIsUnableToLoginWithInCorrectUsernameAndInCorrectPassword -->
-        <test-method signature="verifyTheUserIsUnableToLoginWithInCorrectUsernameAndCorrectPassword()[pri:0, instance:testScript.LoginTest@1500b2f3]" started-at="2025-06-03T00:52:04 IST" name="verifyTheUserIsUnableToLoginWithInCorrectUsernameAndCorrectPassword" finished-at="2025-06-03T00:52:05 IST" duration-ms="194" status="FAIL">
-          <exception class="org.apache.poi.openxml4j.exceptions.NotOfficeXmlFileException">
-            <message>
-              <![CDATA[No valid entries or contents found, this is not a valid OOXML (Office Open XML) file]]>
-            </message>
-            <full-stacktrace>
-              <![CDATA[org.apache.poi.openxml4j.exceptions.NotOfficeXmlFileException: No valid entries or contents found, this is not a valid OOXML (Office Open XML) file
-at org.apache.poi.openxml4j.util.ZipArchiveThresholdInputStream.getNextEntry(ZipArchiveThresholdInputStream.java:156)
-at org.apache.poi.openxml4j.util.ZipInputStreamZipEntrySource.<init>(ZipInputStreamZipEntrySource.java:94)
-at org.apache.poi.openxml4j.opc.ZipPackage.<init>(ZipPackage.java:132)
-at org.apache.poi.openxml4j.opc.OPCPackage.open(OPCPackage.java:319)
-at org.apache.poi.ooxml.util.PackageHelper.open(PackageHelper.java:59)
-at org.apache.poi.xssf.usermodel.XSSFWorkbook.<init>(XSSFWorkbook.java:290)
-at org.apache.poi.xssf.usermodel.XSSFWorkbook.<init>(XSSFWorkbook.java:286)
-at utilities.ExcelUtilities.getStringData(ExcelUtilities.java:22)
-at testScript.LoginTest.verifyTheUserIsUnableToLoginWithInCorrectUsernameAndCorrectPassword(LoginTest.java:31)
-at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
-at java.base/java.lang.reflect.Method.invoke(Method.java:580)
-at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:139)
-at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:664)
-at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:227)
-at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:50)
-at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:957)
-at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:200)
-at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:148)
-at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
-at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1144)
-at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:642)
-at java.base/java.lang.Thread.run(Thread.java:1583)
-Caused by: java.util.zip.ZipException: Unexpected record signature: 0X66C0B891
-at org.apache.commons.compress.archivers.zip.ZipArchiveInputStream.getNextZipEntry(ZipArchiveInputStream.java:296)
-at org.apache.poi.openxml4j.util.ZipArchiveThresholdInputStream.getNextEntry(ZipArchiveThresholdInputStream.java:152)
-... 21 more
-]]>
-            </full-stacktrace>
-          </exception> <!-- org.apache.poi.openxml4j.exceptions.NotOfficeXmlFileException -->
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- verifyTheUserIsUnableToLoginWithInCorrectUsernameAndCorrectPassword -->
-        <test-method is-config="true" signature="driverQuitAndClose(org.testng.ITestResult)[pri:0, instance:testScript.LoginTest@1500b2f3]" started-at="2025-06-03T00:52:05 IST" name="driverQuitAndClose" finished-at="2025-06-03T00:52:05 IST" duration-ms="210" status="PASS">
+        </test-method> <!-- adminUsersTest -->
+        <test-method is-config="true" signature="driverQuitAndClose(org.testng.ITestResult)[pri:0, instance:testScript.AdminUsersTest@3e0e1046]" started-at="2025-06-03T09:34:41 IST" name="driverQuitAndClose" finished-at="2025-06-03T09:34:41 IST" duration-ms="0" status="PASS">
           <params>
             <param index="0">
               <value>
-                <![CDATA[[TestResult name=verifyTheUserIsUnableToLoginWithInCorrectUsernameAndCorrectPassword status=FAILURE method=LoginTest.verifyTheUserIsUnableToLoginWithInCorrectUsernameAndCorrectPassword()[pri:0, instance:testScript.LoginTest@1500b2f3] output={null}]]]>
+                <![CDATA[[TestResult name=adminUsersTest status=SUCCESS method=AdminUsersTest.adminUsersTest()[pri:0, instance:testScript.AdminUsersTest@3e0e1046] output={null}]]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- driverQuitAndClose -->
-        <test-method is-config="true" signature="driverQuitAndClose(org.testng.ITestResult)[pri:0, instance:testScript.LoginTest@1500b2f3]" started-at="2025-06-03T00:52:05 IST" name="driverQuitAndClose" finished-at="2025-06-03T00:52:05 IST" duration-ms="310" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[[TestResult name=verifyTheUserIsUnableToLoginWithInCorrectUsernameAndInCorrectPassword status=FAILURE method=LoginTest.verifyTheUserIsUnableToLoginWithInCorrectUsernameAndInCorrectPassword()[pri:0, instance:testScript.LoginTest@1500b2f3] output={null}]]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- driverQuitAndClose -->
-      </class> <!-- testScript.LoginTest -->
+      </class> <!-- testScript.AdminUsersTest -->
     </test> <!-- Test -->
-  </suite> <!-- ParallelTesting_Method -->
+  </suite> <!-- Suite -->
 </testng-results>

@@ -41,7 +41,7 @@ public class ManageCategoryTest extends Base{
 	}
 	
 	
-	/* @Test
+	 @Test
 	  public void deleteManageCategory() throws IOException, AWTException
 	{
 	
@@ -56,5 +56,5 @@ public class ManageCategoryTest extends Base{
 		  managecategory.clickManageContactMoreInfo();
 		  managecategory.deleteCategory();
 		
-	} */
+	} 
 }
